@@ -9,6 +9,9 @@
 # dependencies
 /FeatureFlagsDemoApp/node_modules
 
+# key files
+environment.*
+
 # IDEs and editors
 /.idea
 .project

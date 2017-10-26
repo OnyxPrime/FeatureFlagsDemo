@@ -1,0 +1,36 @@
+# run docker-compose build
+# run docker-compose up
+
+version: '3'
+
+services:
+
+  nginx:
+    container_name: nginx
+    image: nginx
+    build:
+      context: .
+      dockerfile: .docker/nginx.dockerfile
+    volumes:
+      - ./FeatureFlagsDemoApp/dist:/usr/share/nginx/html
+    ports:
+      - "8081:80"
+    networks:
+      - app-network
+
+  aspnet:
+    container_name: 'aspnetcoreapp'
+    image: 'aspnetcoreapp'
+    build:
+      context: .
+      dockerfile: .docker/aspnetcore.development.dockerfile
+    volumes:
+      - ./FeatureFlagsDemoApi:/var/www/aspnetcoreapp
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,9 @@
+<div id="ninjago-search">
+    <h4>Ninjago Search</h4>
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+    <div>
+        <div *ngFor="let character of characters | async">
+            {{character}}
+        </div>
+    </div>
+</div>

@@ -18,6 +18,10 @@ In FeatureFlagsDemoApp directory,
 
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+- Copy `\app\envrionments\environment.sample.ts` to `\app\envrionments\environment.ts`
+
+- Copy `\app\envrionments\environment.sample.ts` to `\app\envrionments\environment.prod.ts`
+
 ## ASP.Net Core Web Api
 In FeatureFlagsDemoApi directory,
 

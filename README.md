@@ -14,13 +14,13 @@ In FeatureFlagsDemoApp directory,
 
 - Run `npm install` to restore node modules
 
-- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 - Copy `\app\envrionments\environment.sample.ts` to `\app\envrionments\environment.ts`
 
 - Copy `\app\envrionments\environment.sample.ts` to `\app\envrionments\environment.prod.ts`
+
+- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## ASP.Net Core Web Api
 In FeatureFlagsDemoApi directory,

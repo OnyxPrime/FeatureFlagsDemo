@@ -20,11 +20,11 @@
             "styles.css"
         ],
         "scripts": [],
-        "environmentSource": "environments/environment.ts",
+        "environmentSource": "app/environments/environment.ts",
         "environments": {
-            "source": "environments/environment.ts",
-            "dev": "environments/environment.ts",
-            "prod": "environments/environment.prod.ts"
+            "source": "app/environments/environment.ts",
+            "dev": "app/environments/environment.ts",
+            "prod": "app/environments/environment.prod.ts"
         }
     }],
     "e2e": {
